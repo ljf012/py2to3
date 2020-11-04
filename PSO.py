@@ -18,8 +18,8 @@ class PSO():
         self.max_iter = max_iter  # 迭代次数
         self.X = np.zeros((self.pN, self.dim))  # 所有粒子的位置和速度
         self.V = np.zeros((self.pN, self.dim))
-        self.pbest = np.zeros((self.pN, self.dim))  # 个体经历的最佳位置和全局最佳位置
-        self.gbest = np.zeros((1, self.dim))
+        self.pbest = np.zeros((self.pN, self.dim))  # 个体经历的最佳位置
+        self.gbest = np.zeros((1, self.dim))        #全局最佳位置
         self.p_fit = np.zeros(self.pN)  # 每个个体的历史最佳适应值
         self.fit = 1e10  # 全局最佳适应值
 
